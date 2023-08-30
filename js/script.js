@@ -17,7 +17,10 @@ document.querySelectorAll('.btn-detail').forEach(function (item) {
     document.querySelector('.modalHarga').innerHTML = harga;
 
     const nohp = '6289676035509';
-    let pesan = `https://api.whatsapp.com/send?phone=${nohp}&text=Halo Bang,saya mau pesan produk ini ${gambar}`;
+
+    // Tambahkan URL gambar dan deskripsi ke dalam pesan
+    let pesan = `https://api.whatsapp.com/send?phone=${nohp}&text=Halo Bang, saya ingin beli produk ini: %0A${gambar} %0A${deskirpsi}`;
+
     document.querySelector('.btnBeli').href = pesan;
   });
 });
