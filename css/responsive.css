@@ -1,0 +1,31 @@
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 65.5%;
+  }
+  .hero .content {
+    max-width: 70%;
+  }
+
+  .about .container h4 {
+    text-align: center;
+  }
+  .about .container p {
+    text-align: center;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
