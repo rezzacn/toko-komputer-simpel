@@ -61,6 +61,10 @@ body {
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(1);
 }
+.nav-link.active {
+  color: var(--secondary) !important;
+  font-weight: 700;
+}
 /* navbar end */
 
 /* Hero Start */
@@ -194,6 +198,72 @@ body {
 }
 /* Produk End */
 
+/* gallery start */
+.gallery {
+  padding: 7rem 7%;
+  text-align: center;
+}
+
+.gallery h3 {
+  font-weight: 700;
+  color: var(--main);
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.gallery h3 span {
+  color: var(--secondary);
+}
+
+.gallery img {
+  max-width: 100%;
+}
+
+.gallery .container {
+  max-width: 700px;
+  margin: 0 auto;
+  border: 3px solid var(--secondary);
+}
+
+.gallery .container .jumbo {
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery .container .thumbnail {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.gallery .container .thumbnail img {
+  width: calc(33.33% - 10px); /* Mengatur 3 kolom dengan jarak 10px */
+  margin: 5px;
+  box-sizing: border-box;
+  border: 1px solid var(--secondary);
+}
+
+.thumb:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.gallery .active {
+  opacity: 0.5;
+}
+.fade {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+/* gallery end */
+
 /* Kontak Start */
 .kontak {
   padding: 7rem 7%;
@@ -274,6 +344,9 @@ footer .link a:hover {
 
 /* Footer End */
 
+/* Modal Start */
 .modal img {
   width: 100%;
 }
+
+/* Modal end */
